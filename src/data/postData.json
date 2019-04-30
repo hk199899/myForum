@@ -1,0 +1,23 @@
+{
+    "post":{  
+       "postId":1,
+       "title":"my first post",
+       "master":"bwayyy",
+       "date":"30/4/2019",
+       "time":"9:31 AM",
+       "content":"here is my first try of building a forum ! , hope i can succeed and get a job in foregin country",
+       "upvote":3,
+       "downvote":0,
+       "comment":{  
+          "commmentid":1,
+          "userName":"Idy",
+          "date":"31/4/2019",
+          "time":"10:28 PM",
+          "content":"ahfsauighasig",
+          "upvote":3,
+          "downvote":0,
+          "comment":null
+       }
+    }
+ }
+ 

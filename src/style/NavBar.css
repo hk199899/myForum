@@ -1,6 +1,5 @@
 * {
   color: black;
-  font-family: "Gugi", cursive;
   box-sizing: border-box;
 }
 
@@ -8,7 +7,11 @@ nav {
   background-color: white;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid grey ;
+  border-bottom: 1px solid gray;
+}
+
+nav * {
+  font-family:  "Gugi", cursive;
 }
 
 ul,
@@ -61,41 +64,33 @@ button {
   position:relative;
   width: 200px;
 }
-/* #category select{
-  -webkit-appearance: none;
-  cursor: pointer;
-  position: relative;
-}
- #category::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 30%;
-  height: 100%;
-  border-top-right-radius: 0.2em;
-  border-bottom-right-radius: 0.2em;
-} 
-#category select::after {
-  position: absolute;
-  content:'';
-  width:0;
-  height:0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #f00;
-  top:50%;
-  right : 11px;
-  transform: translate(-50%);
-} */
-#category #category-drop-down{
+#category select{
   width: 100%;
   margin: 0px 5px;
   padding: 7px;
   border-radius: 0.2em;
-  height:100%;
+  height:100%; 
+  outline: none;
+  -webkit-appearance: button;
 }
+
+#category:before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  background-image: url(../img/sort-down-solid.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  background-position-x: 60%;
+  pointer-events: none;
+}
+
 
 #search-bar {
   flex-grow: 1;
